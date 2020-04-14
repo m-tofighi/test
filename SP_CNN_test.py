@@ -7,6 +7,7 @@
 #
 # For further information and questions please contact M. Tofighi at tofighi@psu.edu
 hellooooooo world
+hellooooooo Mem! 
 import numpy as np
 import tensorflow as tf
 import glob
