@@ -37,6 +37,13 @@ with tf.Session() as sess:
     b_conv4 = tf.Variable(tf.zeros([64]), name='b_conv4')
     b_conv5 = tf.Variable(tf.zeros([64]), name='b_conv5')
     b_conv6 = tf.Variable(tf.zeros([1]), name='b_conv6')
+
+    b_conv1 = tf.Variable(tf.zeros([64]), name='b_conv1')
+    b_conv2 = tf.Variable(tf.zeros([64]), name='b_conv2')
+    b_conv3 = tf.Variable(tf.zeros([64]), name='b_conv3')
+    b_conv4 = tf.Variable(tf.zeros([64]), name='b_conv4')
+    b_conv5 = tf.Variable(tf.zeros([64]), name='b_conv5')
+    b_conv6 = tf.Variable(tf.zeros([1]), name='b_conv6')
     # declaring inputs
     input_cnn = tf.placeholder(tf.float32)
 
