@@ -37,23 +37,8 @@ with tf.Session() as sess:
     b_conv4 = tf.Variable(tf.zeros([64]), name='b_conv4')
     b_conv5 = tf.Variable(tf.zeros([64]), name='b_conv5')
     b_conv6 = tf.Variable(tf.zeros([1]), name='b_conv6')
-
-    b_conv1 = tf.Variable(tf.zeros([64]), name='b_conv1')
-    b_conv2 = tf.Variable(tf.zeros([64]), name='b_conv2')
-    b_conv3 = tf.Variable(tf.zeros([64]), name='b_conv3')
-    b_conv4 = tf.Variable(tf.zeros([64]), name='b_conv4')
-    b_conv5 = tf.Variable(tf.zeros([64]), name='b_conv5')
-    b_conv6 = tf.Variable(tf.zeros([1]), name='b_conv6')
     # declaring inputs
     input_cnn = tf.placeholder(tf.float32)
-
-    # implementing the network
-    h_conv1 = tf.nn.relu(tf.add(tf.nn.conv2d(input_cnn, w_conv1, strides=[1, 1, 1, 1], padding='SAME'), b_conv1))
-    h_conv2 = tf.nn.relu(tf.nn.conv2d(h_conv1, w_conv2, strides=[1, 1, 1, 1], padding='SAME') + b_conv2)
-    h_conv3 = tf.nn.relu(tf.nn.conv2d(h_conv2, w_conv3, strides=[1, 1, 1, 1], padding='SAME') + b_conv3)
-    h_conv4 = tf.nn.relu(tf.nn.conv2d(h_conv3, w_conv4, strides=[1, 1, 1, 1], padding='SAME') + b_conv4)
-    h_conv5 = tf.nn.relu(tf.nn.conv2d(h_conv4, w_conv5, strides=[1, 1, 1, 1], padding='SAME') + b_conv5)
-    h_conv6 = tf.nn.conv2d(h_conv5, w_conv6, strides = [1,1,1,1], padding = 'SAME') + b_conv6
 
     # implementing the network
     h_conv1 = tf.nn.relu(tf.add(tf.nn.conv2d(input_cnn, w_conv1, strides=[1, 1, 1, 1], padding='SAME'), b_conv1))
