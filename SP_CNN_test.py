@@ -68,4 +68,4 @@ with tf.Session() as sess:
             testedImgName = tst_name[0:-4] + '_Ep' + str(Ep) + '.bmp'
             cv2.imwrite(TEST_SAVE_PATH + testedImgName, output_image)
 
-    print('Testing finished!')
+    print('Testing finished!!!')
